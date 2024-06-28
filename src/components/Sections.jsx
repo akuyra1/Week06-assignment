@@ -16,7 +16,7 @@ export default function Sections() {
          <section>
             <h1>Purchase Manufacturers</h1>
             <img src={redPanda} alt="Red Panda eating a biscuit" />
-
+            <button></button>
          </section>
     
     </div>
