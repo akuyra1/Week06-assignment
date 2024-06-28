@@ -1,0 +1,29 @@
+section {  
+    width: 500px;
+    height: 800px;
+    background-color: palegoldenrod;
+}
+
+.sections-container h1 {
+    background-color: rgb(241, 182, 182);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sections-container h2 {
+
+}
+.sections-container img {
+    width: 300px;
+    height: 300px;
+}
+
+.my-biscuit-button{
+    cursor: pointer;
+}
+
+.sections-container img:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    
+}
