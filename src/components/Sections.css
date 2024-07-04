@@ -1,29 +1,199 @@
 section {  
-    width: 500px;
-    height: 800px;
-    background-color: palegoldenrod;
+    width: 600px;
+    min-height: 800px;
+    height: fit-content;
+    background-color: rgb(95, 72, 105);
+    opacity: .9;
+    box-shadow: 5px 10px 10px #301c1c;
+}
+
+.sections-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
 }
 
 .sections-container h1 {
-    background-color: rgb(241, 182, 182);
+    background-color: rgb(30, 1, 36);
+    color:#fff;
     font-size: 2rem;
     text-align: center;
+    box-shadow: 5px 10px 10px #301c1c;
+    z-index: 100;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
-.sections-container h2 {
-
-}
-.sections-container img {
+.my-biscuit-button {
     width: 300px;
     height: 300px;
-}
-
-.my-biscuit-button{
+    transition: transform 0.25s;
     cursor: pointer;
+    box-shadow: 15px 15px 15px #301c1c;
+    border-radius: 50%;
+    border: 3px solid black;
 }
 
-.sections-container img:nth-child(2) {
+.my-biscuit-button.scaled {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+.red-pandas{
     width: 100px;
-    height: 100px;
-    
+    height: 100px; 
+  }
+
+.manufacturers {
+    cursor: pointer;
+    display:flex;
+    flex-direction: row;
+    border:1px solid black;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manufacturers button {
+    width: 75px;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 30px;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+    width: 120px;
+}
+
+.manufacturers button:hover {
+    background-color: #a3a3a3;
+    transition: .1s;
+    color: #fff;
+}
+
+.counter-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    margin-top:2rem;
+    gap: 30px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.the-shop-section {
+    width: 1000px;
+}
+
+.the-shop-section div {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px 1px #301c1c;
+
+}
+
+.hidden-pandas {
+    background-color: rgb(53, 3, 63);
+    color: #b8733f;
+    opacity: 0.9;
+}
+
+.shown-pandas {
+    background-color: rgba(14, 118, 28, 0.633);
+    opacity: unset;
+    color: black;
+}
+
+.shown-pandas:hover {
+    background-color: rgb(15, 102, 50);
+    color: #fff;
+    transition: .3s;
+}
+
+.counter-span {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .sections-container {
+        margin: 50px 10px;
+        gap: 30px;
+    }
+
+    .manufacturers div{
+        align-content: center;
+        width: 1000px;
+    }
+
+    .the-shop-section div {
+        font-size: 0.9rem;
+        margin: 5px auto;
+        height: 120px;
+        width: 450px;
+        text-align: center;
+        box-shadow: 0 1px 3px 1px #301c1c;
+        padding: 15px 2px;
+    }
+
+    .the-shop-section button {
+        padding: 5px 20px;
+        width: 220px;
+        margin-left: 20px;
+        font-size: 0.9rem;
+        align-self: center;
+    }
+
+    .red-pandas {
+        width: 80px;
+    }
+    .manufacturers img {
+        height: 119px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    section {
+        width: 1000px;
+        margin: 20px;
+        margin: 50px 10px;
+
+    }
+    .sections-container {
+        gap: 30px;
+    }
+    .manufacturers div, .manufacturers img{
+        align-content: center;
+        height: 119px;
+    }
+
+
+    .the-shop-section div {
+        font-size: 1.1rem;
+        margin: 5px auto;
+        height: 120px;
+        width: 1000px;
+        text-align: center;
+        box-shadow: 0 1px 3px 1px #301c1c;
+        padding: 15px 2px;
+    }
+
+    .the-shop-section button {
+        padding: 5px 15px;
+        margin-left: 20px;
+        font-size: 0.9rem;
+        align-self: center;
+    }
+}
+@media only screen and (min-width: 600px) and ( max-width:1200px) {
+    .the-shop-section div {
+        width: 550px;
+    }
 }
